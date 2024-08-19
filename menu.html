@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brew Haven - Full Menu</title>
+    <link rel="stylesheet" href="menu.css">
+    <script src="menu.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Brew Haven</h1>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hot-coffee" class="menu-section hot-coffee">
+            <div class="container">
+                <h2>Hot Coffee</h2>
+                <ul>
+                    <li onclick="addToCart('Espresso')">Espresso</li>
+                    <li onclick="addToCart('Americano')">Americano</li>
+                    <li onclick="addToCart('Latte')">Latte</li>
+                    <li onclick="addToCart('Cappuccino')">Cappuccino</li>
+                    <li onclick="addToCart('Mocha')">Mocha</li>
+                    <li onclick="addToCart('Flat White')">Flat White</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="cold-drinks" class="menu-section cold-drinks">
+            <div class="container">
+                <h2>Cold Drinks</h2>
+                <ul>
+                    <li onclick="addToCart('Iced Coffee')">Iced Coffee</li>
+                    <li onclick="addToCart('Cold Brew')">Cold Brew</li>
+                    <li onclick="addToCart('Iced Latte')">Iced Latte</li>
+                    <li onclick="addToCart('Iced Mocha')">Iced Mocha</li>
+                    <li onclick="addToCart('Frappuccino')">Frappuccino</li>
+                    <li onclick="addToCart('Iced Americano')">Iced Americano</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="desserts" class="menu-section desserts">
+            <div class="container">
+                <h2>Desserts</h2>
+                <ul>
+                    <li onclick="addToCart('Cheesecake')">Cheesecake</li>
+                    <li onclick="addToCart('Chocolate Cake')">Chocolate Cake</li>
+                    <li onclick="addToCart('Brownie')">Brownie</li>
+                    <li onclick="addToCart('Macaron')">Macaron</li>
+                    <li onclick="addToCart('Cookie')">Cookie</li>
+                    <li onclick="addToCart('Muffin')">Muffin</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="teas" class="menu-section teas">
+            <div class="container">
+                <h2>Teas</h2>
+                <ul>
+                    <li onclick="addToCart('Green Tea')">Green Tea</li>
+                    <li onclick="addToCart('Black Tea')">Black Tea</li>
+                    <li onclick="addToCart('Earl Grey')">Earl Grey</li>
+                    <li onclick="addToCart('Chai Latte')">Chai Latte</li>
+                    <li onclick="addToCart('Herbal Tea')">Herbal Tea</li>
+                    <li onclick="addToCart('Matcha')">Matcha</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="mini-bites" class="menu-section mini-bites">
+            <div class="container">
+                <h2>Mini Bites</h2>
+                <ul>
+                    <li onclick="addToCart('Scone')">Scone</li>
+                    <li onclick="addToCart('Bagel')">Bagel</li>
+                    <li onclick="addToCart('Croissant')">Croissant</li>
+                    <li onclick="addToCart('Quiche')">Quiche</li>
+                    <li onclick="addToCart('Granola Bar')">Granola Bar</li>
+                    <li onclick="addToCart('Sandwich')">Sandwich</li>
+                    <li onclick="addToCart('Wrap')">Wrap</li>
+                    <li onclick="addToCart('Salad')">Salad</li>
+                    <li onclick="addToCart('Fruit Cup')">Fruit Cup</li>
+                    <li onclick="addToCart('Yogurt Parfait')">Yogurt Parfait</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Brew Haven. All rights reserved.</p>
+        </div>
+    </footer>
+    <div class="container">
+        <p>&copy; 2024 Brew Haven. All rights reserved.</p>
+    </div>
+</footer>
+<div class="alan-btn"></div>
+<script type="text/javascript"
+src="https://studio.alan.app/web/lib/alan_lib.min.js"></script>
+<script>
+var alanBtnInstance = alanBtn({
+key: "f41b91a559d09d58e14bac753c880a212e956eca572e1d8b807a3e2338fdd0dc/stage",
+onCommand: function (commandData) {
+  if (commandData.command === "go:back") {
+    //call client code that will react on the received command
+  }
+},
+rootEl: document.getElementById("alan-btn"),
+});
+</script>
+</body>
+</html>

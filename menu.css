@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu-section {
+    padding: 50px 0;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.menu-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.menu-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-section ul li {
+    font-size: 1.2em;
+    margin: 10px 0;
+    cursor: pointer;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.menu-section ul li:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Background images for each section */
+.hot-coffee {
+    background-image: url('hot-coffee-bg.jpeg');
+}
+
+.cold-drinks {
+    background-image: url('cold-drinks-bg.jpeg');
+}
+
+.desserts {
+    background-image: url('desserts-bg.jpeg');
+}
+
+.teas {
+    background-image: url('teas-bg.jpeg');
+}
+
+.mini-bites {
+    background-image: url('mini-bites-bg.jpeg');
+}
+
+.cart {
+    background-color: #fff;
+    color: #333;
+}
+
+.cart ul {
+    list-style: none;
+    padding: 0;
+}
+
+.cart ul li {
+    font-size: 1.2em;
+    margin: 10px 0;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.remove-item {
+    cursor: pointer;
+    color: red;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+#place-order-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#place-order-btn:hover {
+    background-color: #34495e;
+}
+
